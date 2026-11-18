@@ -19,8 +19,6 @@ example.com
 
 AmneziaVPN 新条目：`{"hostname":"value","ip":"","ips":[]}`。Windscribe 新条目：`{"active":true,"name":"value","type":0}`，其中 IPv4/CIDR 为 `type: 0`，域名为 `type: 1`。
 
-## Windscribe 模板注意事项
-当前 `template/windscribe.template.json` 是仅含 `networkRoutes` 的最小模板，不是完整导出配置。若需保留 Windscribe 的其他设置，请用客户端导出的完整 JSON 替换该文件。脚本只更新 `networkRoutes`，其他字段原样保留。不要将账户令牌、私钥等敏感信息提交到公开仓库。
 
 ## 本地运行
 Python 3.10+，无第三方依赖：
@@ -36,6 +34,9 @@ python scripts/build_routes.py
 支持 IPv4、IPv4 CIDR、ASCII 域名及 IDN（转为 Punycode）。暂不支持 IPv6、URL、端口、路径及通配符域名。无效行会报告文件和行号并使构建失败，不会静默忽略。
 
 ### Windscribe 配置导入注意事项
+
+当前 `template/windscribe.template.json` 是仅含 `networkRoutes` 的最小模板，不是完整导出配置。若需保留 Windscribe 的其他设置，请用客户端导出的完整 JSON 替换该文件。脚本只更新 `networkRoutes`，其他字段原样保留。不要将账户令牌、私钥等敏感信息提交到公开仓库。
+
 
 **请勿使用生成的 `windscribe-routes.json` 完整覆盖 Windscribe 原始配置文件。**
 
