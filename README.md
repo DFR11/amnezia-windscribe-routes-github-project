@@ -1,3 +1,5 @@
+整个项目由chatgpt生成
+
 # AmneziaVPN + Windscribe Route Builder
 
 从 `input/*.txt` 读取 IPv4、CIDR 和域名，生成两种客户端路由 JSON，并通过 GitHub Actions 发布 Release。
