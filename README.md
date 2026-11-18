@@ -46,6 +46,6 @@ python scripts/build_routes.py
 5. 找到原文件中的 `networkRoutes` 字段，仅替换其原有数组值。
 6. 保存文件，保留原配置中的其他所有字段。
 
-![Windscribe networkRoutes 数组替换示例](docs/images/windscribe-networkroutes-example.png)
+![Windscribe networkRoutes 数组替换示例]([docs/images/windscribe-networkroutes-example.png](https://github.com/DFR11/amnezia-windscribe-routes-github-project/blob/main/windscribe-networkroutes-readme-example.png))
 
 **注意：** 不要复制或覆盖最外层 JSON 对象，也不要删除原配置中的其他字段。
