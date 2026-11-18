@@ -1,0 +1,4 @@
+# Add one IPv4, CIDR, or domain per line
+# 192.0.2.10
+# 198.51.100.0/24
+# example.com
